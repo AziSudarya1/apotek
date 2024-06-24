@@ -1,0 +1,36 @@
+RewriteEngine On
+RewriteBase /apotek/
+
+# Atur default file menjadi LandingPage.php
+DirectoryIndex LandingPage.php
+
+# Redirect permintaan ke LandingPage.php
+RewriteRule ^$ LandingPage.php [L]
+
+# Redirect untuk sign-up dan login
+RewriteRule ^loginAsApoteker\.php$ login/loginAsApoteker.php [L]
+RewriteRule ^loginAsPasien\.php$ login/loginAsPasien.php [L]
+RewriteRule ^loginAsPemasok\.php$ login/loginAsPemasok.php [L]
+RewriteRule ^signUpAsApoteker\.php$ signup/signUpAsApoteker.php [L]
+RewriteRule ^signUpAsPasien\.php$ signup/signUpAsPasien.php [L]
+RewriteRule ^signUpAsPemasok\.php$ signup/signUpAsPemasok.php [L]
+
+# Redirect untuk halaman apoteker
+RewriteRule ^menuforuser\.php$ menu/menuforuser.php [L]
+RewriteRule ^konsultasi\.php$ menu/konsultasi.php [L]
+RewriteRule ^pemasok\.php$ menu/pemasok.php [L]
+RewriteRule ^beliobat\.php$ menu/beliobat.php [L]
+RewriteRule ^konsApoteker1\.php$ menu/konsApoteker1.php [L]
+RewriteRule ^konsApoteker2\.php$ menu/konsApoteker2.php [L]
+RewriteRule ^transaksi\.php$ menu/transaksi.php [L]
+
+# Redirect untuk halaman pasien
+RewriteRule ^menuforuser\.php$ menu/menuforuser.php [L]
+RewriteRule ^beliobat\.php$ menu/beliobat.php [L]
+RewriteRule ^konsultasi\.php$ menu/konsultasi.php [L]
+RewriteRule ^konsApoteker1\.php$ menu/konsApoteker1.php [L]
+RewriteRule ^konsApoteker2\.php$ menu/konsApoteker2.php [L]
+RewriteRule ^transaksi\.php$ menu/transaksi.php [L]
+
+# Redirect untuk halaman pemasok
+RewriteRule ^pemasok\.php$ menu/pemasok.php [L]

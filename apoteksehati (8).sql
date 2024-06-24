@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Waktu pembuatan: 24 Jun 2024 pada 08.25
+-- Waktu pembuatan: 24 Jun 2024 pada 08.38
 -- Versi server: 8.0.30
 -- Versi PHP: 8.1.10
 
@@ -34,7 +34,7 @@ CREATE TABLE `apoteker` (
   `alamat` varchar(50) NOT NULL,
   `jabatan` varchar(16) NOT NULL,
   `pend_terakhir` varchar(16) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data untuk tabel `apoteker`
@@ -56,7 +56,7 @@ CREATE TABLE `obat` (
   `harga` int NOT NULL,
   `stok` int NOT NULL,
   `id_pemasok` int DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data untuk tabel `obat`
@@ -83,7 +83,7 @@ CREATE TABLE `pasien` (
   `tanggal_lahir` date NOT NULL,
   `id_apoteker` int DEFAULT NULL,
   `kode_obat` int DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data untuk tabel `pasien`
@@ -105,7 +105,7 @@ CREATE TABLE `pemasok` (
   `password` varchar(50) NOT NULL,
   `kontak_pemasok` varchar(50) NOT NULL,
   `alamat` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data untuk tabel `pemasok`
@@ -127,7 +127,7 @@ CREATE TABLE `transaksi` (
   `tanggal_transaksi` date NOT NULL,
   `total_harga` int NOT NULL,
   `id_pasien` int DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data untuk tabel `transaksi`
